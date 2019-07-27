@@ -19,7 +19,7 @@
 .navbar-light .navbar-nav .nav-link:hover {
   color:#d7ddd7 ;
 }
-
-.nav-link {
-  font-size: 14px;
-}
+  .material-icons{
+     display: inline-flex;
+     vertical-align: top;
+ } 
