@@ -11,12 +11,13 @@ import {
 } from '../app/components/index';
 
 const routes: Routes = [
-	{path: 'index', component: HomeComponent},
+	  {path: 'index', component: HomeComponent},
     {path: 'navbar', component: NavbarComponent},
     {path: 'parliamentary-vote', component: ParliamentaryVoteComponent},
     {path: 'presidential-vote', component: PresidentialVoteComponent},
     {path: 'overview', component: OverviewComponent},
-    {path: 'contact-us', component: ContactUsComponent}
+    {path: 'contact-us', component: ContactUsComponent},
+    {path: '', redirectTo:'/index', pathMatch:'full'},
 ];
 
 @NgModule({

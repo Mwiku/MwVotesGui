@@ -10,15 +10,15 @@ import { Observable } from 'rxjs'; //TODO: Optimise code by implementing import 
 export class PresidentialVoteService {
 
 
-  private apiUrl = environment.serverUrl;
-    constructor(private http: HttpClient) {
+  private apiUrl: string = environment.serverUrl;
+    constructor(private httpClient: HttpClient) {
     }
 
-    getVotes(): Observable<IPresidentialVoteResult[]> {
-        return this.http.get<IPresidentialVoteResult[]>(`${this.apiUrl}/presidentialvote/results`);
+    public getVotes(): Observable<IPresidentialVoteResult[]> {
+        return this.httpClient.get<IPresidentialVoteResult[]>(`${this.apiUrl}/presidentialvote/results`);
     }
 
-    getSortedVotes(): Observable<IPresidentialVoteResult[]> {
-        return this.http.get<IPresidentialVoteResult[]>(`${this.apiUrl}/presidentialvote/sorted-results`);
+    public getSortedVotes(): Observable<IPresidentialVoteResult[]> {
+        return this.httpClient.get<IPresidentialVoteResult[]>(`${this.apiUrl}/presidentialvote/sorted-results`);
     }
 }
