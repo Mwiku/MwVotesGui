@@ -9,6 +9,20 @@ import { PresidentialVoteService } from '../../services/presidential-vote.servic
 export class HomeComponent implements OnInit {
 
   public presidentialVoteResults;
+  public totalRegisteredVoters = '~ 6.8M';
+  public leadingPartyVotes: number;
+  public trailingPartyVotes: number;
+    public numberOfPresidentilCandidates = 7;
+
+    public leadingPartyName: string;
+    public leadingPartyColor: string;
+
+    public trailingPartyName: string;
+    public trailingPartyColor: string;
+
+    public totalVotes = 6;
+
+    public voterPercentage: number;
   dateToday = Date.now();
   constructor(private presidentialVoterService: PresidentialVoteService ) { }
 
