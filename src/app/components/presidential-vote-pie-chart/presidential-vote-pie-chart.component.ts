@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IPresidentialVoteResult } from '../../interfaces/presidential-vote-result';
 import { PresidentialVoteService } from '../../services/presidential-vote.service';
 
-import { BaseChartDirective } from 'ng2-charts';
+// import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'app-presidential-vote-pie-chart',
@@ -14,7 +14,7 @@ export class PresidentialVotePieChartComponent implements OnInit {
   constructor(private presidentialVoteService: PresidentialVoteService) { }
 
   public results: IPresidentialVoteResult[] ;
-    public chart: BaseChartDirective;
+    // public chart: BaseChartDirective;
 
     public pieChartOptions: any = {
         responsive: true,
