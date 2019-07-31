@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PresidentialVoteService } from '../../services/presidential-vote.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public presidentialVoteResults;
+  dateToday = Date.now();
+  constructor(private presidentialVoterService: PresidentialVoteService ) { }
+
+  getPresidentialVoteResults() {
+      this.presidentialVoterService.getVotes()
+      .subscribe( (data: Array<object>) => {
+              this.presidentialVoteResults = data;
+          });
+      }
 
   ngOnInit() {
+      this.getPresidentialVoteResults();
   }
 
 }

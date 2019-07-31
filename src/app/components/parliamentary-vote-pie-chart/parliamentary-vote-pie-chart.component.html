@@ -1,3 +1,16 @@
 <p>
   parliamentary-vote-pie-chart works!
 </p>
+<div style="position: relative; height: 75%; width: 100%;">
+  <canvas baseChart
+      [data]="pieChartData"
+      [labels]="pieChartLabels"
+      [chartType]="pieChartType"
+      [options] = "pieChartOptions"
+      [colors] = "pieChartColors"
+      [legend]="pieChartLegend">
+  </canvas>
+
+  <div style="text-align:center">
+  </div>
+</div>    

@@ -1,3 +1,17 @@
 <p>
   parliamentary-vote-table works!
 </p>
+<table class="table table-striped table-hover" >
+  <thead class="thead">
+      <tr>
+          <th> Party </th>
+          <th> № of  MP's </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let presidentialVoteResult of presidentialVoteResults">
+          <td> {{presidentialVoteResult.partyName}} ({{presidentialVoteResult.abbreviation}}) </td>
+          <td> {{presidentialVoteResult.numberOfMembersOfParliament}} </td>
+      </tr>
+  </tbody>
+</table>
