@@ -1,6 +1,103 @@
-<p>
-  home works!
-</p>
-
-<i class="material-icons">face </i> <span> Okay </span> 
-<span style="font-size:18px">ID</span> <i class="material-icons">info</i>
+<div class="container">
+		<br>
+		<div class="row" style="text-align: center">
+			<div class="col-md-12"> <h2 class="main-title"> 2019 Tripartite Elections (MW) </h2> </div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"> </div>
+			<div class="col-xs-9">
+				<h3> Presidential Results </h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"> </div>
+			<div class="col-xs-4">
+				<h4> Leading </h4>
+				
+				<br>
+					{{leadingPartyVotes | number}} - votes
+			<hr class="leading-party" [style.border-color]="leadingPartyColor">
+					<h5> {{ leadingPartyName }} </h5>
+			</div>
+			<div class="col-xs-4 t-party">
+				<h4> Trailing </h4>
+					<br>
+					{{trailingPartyVotes | number}} - votes 
+					<hr class="trailing-party" [style.border-color]="trailingPartyColor"> 
+					<h5> {{ trailingPartyName }} </h5>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-xs-1">
+			</div>
+			<div class="col-xs-11">
+				<hr>
+			</div>
+		</div>
+	
+		<div class="row" >
+			<div class="col-md-12" style="text-align:center"> 
+			 <h4> The Numbers </h4>
+			 <br>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-xs-4"> 
+				<div class="vz">
+					<div class="row" style="font-size:2em">
+						<div class="col-md-12">
+							{{ totalRegisteredVoters }} 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						  &nbsp;&nbsp;  Total number of registered voters
+						</div>
+					</div>
+				</div>  
+			</div>
+			<div class="col-xs-4"> 
+				<div class="vl">
+					<div class="row" style="font-size:2em">
+						<div class="col-md-12">
+							{{totalVotes | number}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							&nbsp;&nbsp;  This is the 6th time we are conducting a democratic election ...
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4"> 
+				<div class="vl"> 
+					<div class="row" style="font-size:2em">
+						<div class="col-md-12">
+							{{numberOfPresidentilCandidates | number }}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							&nbsp;&nbsp;&nbsp; № of presidential candidates in contetion 
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	
+	   <div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+					<a [routerLink]="['/overview']" routerLinkActive="['active']" style="color: white">
+						<button type="button" class="btn btn-success" style="border-radius: 5px;"> See more !</button> 
+					</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"> </div>
+		</div>
+	</div>
+		

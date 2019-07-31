@@ -1,3 +1,27 @@
-<p>
-  overview works!
-</p>
+<div class="container">
+    <div class="row" style="align-items: center">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <h3>Presidential vote </h3>
+            <table class="table table-striped table-hover">
+                <thead class="thead">
+                    <tr>
+                        <th> Party </th>
+                        <th> Candidate </th>
+                        <th> № of  Votes </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let presidentialVoteResult of presidentialVoteResults">
+                        <td> {{presidentialVoteResult.partyName}} ({{presidentialVoteResult.abbreviation}}) </td>
+                        <td> {{presidentialVoteResult.fullName}} - {{presidentialVoteResult.initials}}</td>
+                        <td> {{presidentialVoteResult.votes}} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

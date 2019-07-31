@@ -2,3 +2,75 @@
     display: inline-flex;
     vertical-align: top;
 }
+
+.home-header {
+    font-size: 21px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.countdown {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+@media (max-width: 768px) {
+    .main-title{
+        font-size: 2em;
+    }
+}
+
+@media screen and  (max-width:600px) {
+    .timer {
+        font-size: 1em;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and  (min-width:601px) {
+    .timer {
+        text-align: center;
+        font-size: 1.9em;
+        color: #fff;
+    }
+}
+
+
+  hr{
+    border-width: 2px;
+    border-color: #fff;
+  }
+  .leading-party {
+    width: 100%;
+    border-width: 10px;
+  }
+
+  .extra-info {
+      vertical-align: center;
+  }
+  .trailing-party {
+    width: 100%;
+    border-width: 10px;
+  }
+  
+  .bg-primary {
+    background-color: #fff !important;
+  }
+
+  .vl {
+    border-left: 6px solid #fff;
+    border-width: 1px;
+    height: 50px;
+    margin-left: -5px;
+    text-align: center;
+  }
+
+  .vz {
+    border-width: 1px;
+    height: 50px;
+    margin-left: -5px;
+    text-align: center;
+  }
