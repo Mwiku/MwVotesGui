@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import {
@@ -37,7 +38,8 @@ import { ParliamentaryVoteTableComponent } from './components/parliamentary-vote
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule 
+    HttpClientModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
